@@ -8,7 +8,7 @@ function LikeButton() {
         setLike((like) => like + 1);
 
     }
-  return <button onClick = {handleAdd}>{like}likes</button>
+  return <button onClick = {handleAdd}>{like} likes</button>
   
 }
 

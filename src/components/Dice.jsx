@@ -12,10 +12,11 @@ const diceArray = [dice1, dice2, dice3, dice4, dice5, dice6]
 
 function Dice() {
     const [dice, setDice] = useState(diceArray[random])
-    const randomDice = Math.floor(Math.random() * 6)
+    
     function handleDice(){
         setDice(diceEmpty)
         setTimeout(() => {
+          const randomDice = Math.floor(Math.random() * 6)
             setDice(diceArray[randomDice])
         }, 1000)
     }

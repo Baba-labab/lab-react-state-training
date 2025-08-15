@@ -6,7 +6,7 @@ function Counter() {
     function handleClick(e) {
 
         if (e.target.className === "minus-btn") {
-            setNumber(number => number - 1)
+            setNumber(number => Math.max(0, number - 1));
             if (number === 0) {
                 setNumber(0);
             }
